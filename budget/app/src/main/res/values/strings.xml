@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <array name="qst_list">
+        <item>What is my number one treasure?</item>
+        <item>What is the name of my first pet?</item>
+        <item>What is my favorite food?</item>
+    </array>
+</resources>

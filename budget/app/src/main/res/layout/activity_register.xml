@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <EditText
+        android:id="@+id/rg_name_edit"
+        android:layout_width="337dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_name" />
+
+    <EditText
+        android:id="@+id/rg_asw_edit"
+        android:layout_width="337dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Answer"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_aws" />
+
+    <TextView
+        android:id="@+id/rg_aws"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Answer"
+        app:layout_constraintStart_toStartOf="@+id/rg_asw_edit"
+        app:layout_constraintTop_toBottomOf="@+id/rg_qt_slt" />
+
+    <TextView
+        android:id="@+id/rg_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Name"
+        app:layout_constraintStart_toStartOf="@+id/rg_name_edit"
+        app:layout_constraintTop_toBottomOf="@+id/rg_pwd_chk_edit" />
+
+    <TextView
+        android:id="@+id/rg_qst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Question"
+        app:layout_constraintStart_toStartOf="@+id/rg_name_edit"
+        app:layout_constraintTop_toBottomOf="@+id/rg_name_edit" />
+
+    <EditText
+        android:id="@+id/rg_pwd_chk_edit"
+        android:layout_width="337dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_pwd_chk" />
+
+    <TextView
+        android:id="@+id/rg_pwd_chk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Password Check"
+        app:layout_constraintStart_toStartOf="@+id/rg_pwd_chk_edit"
+        app:layout_constraintTop_toBottomOf="@+id/rg_pwd_edit" />
+
+    <TextView
+        android:id="@+id/rg_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:text="Register"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/rg_ID_edit"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rg_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="ID"
+        app:layout_constraintStart_toStartOf="@+id/rg_ID_edit"
+        app:layout_constraintTop_toBottomOf="@+id/rg_title" />
+
+    <EditText
+        android:id="@+id/rg_ID_edit"
+        android:layout_width="210dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="ID"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/rg_pwd_edit"
+        app:layout_constraintTop_toBottomOf="@+id/rg_ID" />
+
+    <Button
+        android:id="@+id/rg_check_btn"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:onClick="check_ocb"
+        android:text="ID check"
+        app:layout_constraintEnd_toEndOf="@+id/rg_pwd_edit"
+        app:layout_constraintTop_toBottomOf="@+id/rg_ID" />
+
+    <EditText
+        android:id="@+id/rg_pwd_edit"
+        android:layout_width="337dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_pwd" />
+
+    <TextView
+        android:id="@+id/rg_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Password"
+        app:layout_constraintStart_toStartOf="@+id/rg_pwd_edit"
+        app:layout_constraintTop_toBottomOf="@+id/rg_check_txt" />
+
+    <TextView
+        android:id="@+id/rg_check_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Letter length 5 to 10"
+        app:layout_constraintStart_toStartOf="@+id/rg_ID_edit"
+        app:layout_constraintTop_toBottomOf="@+id/rg_ID_edit" />
+
+    <Spinner
+        android:id="@+id/rg_qt_slt"
+        android:layout_width="337dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="5dp"
+        android:entries="@array/qst_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_qst" />
+
+    <Button
+        android:id="@+id/rg_create_btn"
+        android:layout_width="337dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:onClick="onCreate"
+        android:text="Create"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_asw_edit" />
+</androidx.constraintlayout.widget.ConstraintLayout>

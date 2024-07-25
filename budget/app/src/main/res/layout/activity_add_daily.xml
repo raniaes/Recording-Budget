@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".add_daily">
+
+    <Button
+        android:id="@+id/add_submit_btn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:onClick="onaddclick"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/add_price_edit"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="$"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_price" />
+
+    <EditText
+        android:id="@+id/add_name_edit"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_name" />
+
+    <TextView
+        android:id="@+id/add_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Name"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/add_name_edit"
+        app:layout_constraintTop_toBottomOf="@+id/add_title" />
+
+    <TextView
+        android:id="@+id/add_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Price"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/add_price_edit"
+        app:layout_constraintTop_toBottomOf="@+id/add_name_edit" />
+
+    <TextView
+        android:id="@+id/add_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Date"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/add_price_edit"
+        app:layout_constraintTop_toBottomOf="@+id/add_price_edit" />
+
+    <TextView
+        android:id="@+id/add_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:text="New Income / Expense"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/add_date_edit"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="Date"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="@+id/add_price_edit"
+        app:layout_constraintTop_toBottomOf="@+id/add_date" />
+
+    <ToggleButton
+        android:id="@+id/in_ex_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="#000000"
+        android:checked="false"
+        android:text="ToggleButton"
+        android:textColor="#FFFFFF"
+        android:textOff="Expense"
+        android:textOn="Income"
+        app:layout_constraintStart_toStartOf="@+id/add_date_edit"
+        app:layout_constraintTop_toBottomOf="@+id/add_date_edit" />
+
+    <EditText
+        android:id="@+id/add_time_edit"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="Time"
+        android:inputType="time"
+        app:layout_constraintEnd_toEndOf="@+id/add_price_edit"
+        app:layout_constraintTop_toBottomOf="@+id/add_date" />
+
+    <ImageView
+        android:id="@+id/add_pic"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        android:onClick="add_pic_click"
+        android:src="@drawable/no_image"
+        app:layout_constraintEnd_toEndOf="@+id/add_submit_btn"
+        app:layout_constraintStart_toStartOf="@+id/add_submit_btn"
+        app:layout_constraintTop_toBottomOf="@+id/in_ex_btn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

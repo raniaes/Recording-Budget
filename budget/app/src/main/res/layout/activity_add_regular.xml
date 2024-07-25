@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_regular">
+
+    <Button
+        android:id="@+id/add_wk_submit_btn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:onClick="add_wk_click"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/in_wk_ex_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="#000000"
+        android:checked="false"
+        android:text="ToggleButton"
+        android:textColor="#FFFFFF"
+        android:textOff="Expense"
+        android:textOn="Income"
+        app:layout_constraintStart_toStartOf="@+id/add_wk_date_edit"
+        app:layout_constraintTop_toBottomOf="@+id/add_wk_date_edit" />
+
+    <EditText
+        android:id="@+id/add_wk_time_edit"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="Time"
+        android:inputType="time"
+        app:layout_constraintEnd_toEndOf="@+id/add_wk_price_edit"
+        app:layout_constraintTop_toBottomOf="@+id/add_wk_date" />
+
+    <EditText
+        android:id="@+id/add_wk_date_edit"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="Date"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="@+id/add_wk_price_edit"
+        app:layout_constraintTop_toBottomOf="@+id/add_wk_date" />
+
+    <TextView
+        android:id="@+id/add_wk_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Start Date"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/add_wk_price_edit"
+        app:layout_constraintTop_toBottomOf="@+id/add_wk_price_edit" />
+
+    <EditText
+        android:id="@+id/add_wk_price_edit"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="$"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_wk_price" />
+
+    <TextView
+        android:id="@+id/add_wk_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Price"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/add_wk_price_edit"
+        app:layout_constraintTop_toBottomOf="@+id/add_wk_name_edit" />
+
+    <EditText
+        android:id="@+id/add_wk_name_edit"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_wk_name" />
+
+    <TextView
+        android:id="@+id/add_wk_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Name"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/add_wk_name_edit"
+        app:layout_constraintTop_toBottomOf="@+id/add_wk_title" />
+
+    <TextView
+        android:id="@+id/add_wk_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:text="Add Weekly"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
